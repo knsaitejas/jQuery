@@ -1,0 +1,46 @@
+* {
+	padding: 0px;
+	margin: 0px;
+}
+
+input, textarea {
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+form {
+	margin: 20px;
+	display: inline-block;
+	width: 300px;
+	background-color: grey;
+	vertical-align: top;
+}
+
+textarea {
+	display: block;
+	width: 150px;
+	height: 100px;
+}
+
+div {
+	width: 400px;
+	background-color: green;
+	display: inline-block;
+	margin-top: 20px;
+}
+
+.card {
+	background-color: blue;
+	font-size: 30px;
+	text-align: center;
+	height: 100px;
+	padding: 
+}
+
+.card span {
+	font-size: 20px;
+}
+
+.desc {
+	display: none;
+}

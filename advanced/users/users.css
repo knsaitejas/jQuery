@@ -1,0 +1,30 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+table {
+	margin: 10px;
+	border:	solid;
+	width: 500px;
+}
+
+th {
+	padding: 10px;
+}
+
+h1 {
+	margin-left: 10px;
+	margin-bottom: 10px;
+	border-bottom: solid;
+	width: 500px;
+}
+
+form {
+	margin: 10px;
+}
+
+input {
+	margin: 10px;
+}
+

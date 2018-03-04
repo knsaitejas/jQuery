@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pokemon assignment</title>
+  <link rel="stylesheet" type="text/css" href="pokemon.css">
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function(){
+        function addPokemon(){
+          for (var i = 1; i<=151; i++) {
+            // console.log(i);
+            $(".add_here").append("<img src = 'https://pokeapi.co/media/img/"+i+".png' class="+i+">");
+          } //forloop end
+        }; //function end
+        addPokemon();
+        $('img').click(function(){
+            var pokemon = $(this).attr('class');
+            $.get("https://pokeapi.co/api/v2/pokemon/"+pokemon, function(res) {
+              console.log(res)
+              $('.information').html('<h2>'+res.name+'</h2>')
+              $('.information').append("<img src = 'https://pokeapi.co/media/img/"+pokemon+".png'>")
+              $('.information').append('<ul><h3>Types</h3><li>'+res.types[0].type.name+'</li></ul>')
+              $('.information').append('<h3>Height</h3><p>'+res.height+'</p>')
+              $('.information').append('<h3>Weight</h3><p>'+res.weight+'</p>')
+            }, "json")
+        }); //click ending
+    }); //ending 
+  </script>
+</head>
+<body>
+  <div class="add_here"></div> 
+  <div class="information"></div>
+
+</body>
+</html>
+
+

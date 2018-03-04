@@ -1,0 +1,42 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+.add_here {
+	width: 700px;
+	display: inline-block;
+	background-color: white;
+	display: inline-block;
+}
+
+img {
+	border: none;
+	padding: 5px;
+}
+
+.information {
+	display: inline-block;
+	width: 300px;
+	height: 300px;
+	vertical-align: top;
+	margin-top: 10px;
+	border: solid;
+	position: fixed;
+}
+
+ul {
+	margin-left: 0px
+}
+
+li {
+	margin-left: 30px;
+}
+
+h3 {
+	margin-left: 10px;
+}
+
+p {
+	margin-left: 11px;
+}

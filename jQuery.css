@@ -1,0 +1,22 @@
+* {
+	padding: 0px;
+	margin: 0px;
+}
+
+h1 {
+	display: inline-block;
+	margin-left: 40px;
+}
+
+p {
+	margin-top: 10px;
+	margin-bottom: 40px;
+	margin-left: 10px;
+}
+
+button {
+	margin-left: 10px;
+}
+
+
+

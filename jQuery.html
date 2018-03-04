@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jQuery Functions</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="jQuery.css">
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('.add_class button').click(function(){
+				$('.add_class p').css('color','red');
+			})
+			$('.slide_toggle button').click(function(){
+				$('.slide_toggle img').slideToggle();
+			})
+			$('.append button').click(function(){
+				$('.append p').append('append this bro');
+			})
+		})
+	</script>
+
+</head>
+<body>
+	<div class="add_class">
+		<button type="button">AddClass</button>
+		<h1>AddClass</h1>
+		<p>Click the button to add class 'red' to this paragraph</p>
+	</div>
+	<div class="slide_toggle">
+		<button type="button">SlideToggle</button>
+		<h1>Slidetoggle</h1>
+		<p>Click the button to slide toggle a hidden image <br><img src="image" alt="apple picture"></a></p>
+	</div>
+	<div class="append">
+		<button type="button">Append</button>
+		<h1>Append</h1>
+		<p>Click the button to append a new paragraph!</p>
+	</div>
+</body>
+</html>

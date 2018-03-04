@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Practicing problems</title>
+	<link rel="stylesheet" type="text/css" href="practice.css">
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('.b1').click(function(){
+				$('p').before().html("hello");
+			})
+			$('.b2').click(function(){
+				$('p').removeClass();
+			})
+		})
+	</script>
+</head>
+<body>
+	<button type="button" class="b1">Click here</button>
+	<button type="button" class="b2">Click here</button>
+	<p>This is a bunch of different text</p>
+	<h3 class="edit">YO</h3>
+</body>
+</html>
